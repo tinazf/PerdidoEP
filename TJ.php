@@ -1,3 +1,11 @@
+<?php
+session_start();
+include_once('funcoes.php');
+
+$id = $_SESSION['idJog'];
+$sql = "SELECT * FROM jogador WHERE id='$id'";
+$resultado = mysqli_query(conectar(), $sql); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
