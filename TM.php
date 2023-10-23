@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,7 @@
     <title>Menu</title>
 </head>
 <body>
-    <br><a href="TJ.php">Novo Jogo</a>
+    <br><a href="TJ.php?if=<?php echo $jogador['id']?>">Novo Jogo</a>
     <br>
     <br><a href="TJS.php">Continuar Jogo</a>
     <br>

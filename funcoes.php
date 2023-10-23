@@ -34,6 +34,9 @@ if(isset($_POST['login'])){
     if(mysqli_num_rows($resultado) > 0){
         $dados = mysqli_fetch_assoc($resultado);
         if($senha == $dados['Senha']){
+            session_start();
+            $_SESSION["idJog"] = $dados['ID'];
+            $_SESSION["Jogador"] = $dados['Nome'];
                 header("location:TM.php");
         } else {
                 header("location:index.php");
