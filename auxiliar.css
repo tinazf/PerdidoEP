@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Immortal;
+    src: url(Fonte/IMMORTAL.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(IMG/FP.gif);
+    background-size: cover;
+    font-family: Immortal;
+}
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .current-page {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .transition-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+  }
+.container {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        background: url('IMG/TFP.png') center/cover no-repeat; /* Substitua o caminho pela sua imagem */
+        position: relative;
+ }
+
+ .container img {
+    width: 10%;
+    height: auto;
+    display: block;
+  }
+
+.botão {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 0;
+    color: #ffffff;
+    font-family: Times New Roman;
+    width: 200px;
+    font-size: 20px;
+    padding: 20px;
+    background:    #6fa8dc;
+    background:    linear-gradient(#6fa8dc, #0b5394);
+    border-radius: 1000px;
+    padding:       20px 75px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 25px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ .formulario{
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    margin: 15%;
+    margin-top: 5%;
+    font-size:xx-large;
+    font-family: Immortal;
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #000000;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+  }
+
+.header {
+    width: 100%;
+    background-color: #000000;
+}
+.barra {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+  }
+  .botao-imagem {
+    background: url('IMG/BM.png') center/cover no-repeat; 
+    border: none;
+    width: 150px; 
+    height: 55px;
+    cursor: pointer;
+    font-family: Immortal;
+  }
+  .botao-imagem:hover {
+    opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+  }
