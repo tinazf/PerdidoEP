@@ -25,7 +25,7 @@
             <label for="telefone">Senha:</label>
             <input type="text" name="snh" placeholder='********'>
         </div>
-        <button class="botao-imagem" type="submit" name="login"> Logar </button>
+        <button class="botao-imagem" type="submit" name="cadastrar"> Escrever Novas Paginas </button>
 </form>
     </div>
   </div>

@@ -21,8 +21,8 @@
             <input type="text" name="snh" placeholder='********'>
         </div>
         <button class="botao-imagem" type="submit" name="login"> Fazer Anotações </button>
+        <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TC.php">Novo Escritor</a></button>
 </form>
-    </div>
   </div>
 </body>
 </html>
