@@ -8,6 +8,9 @@
   <title>PEP</title>
 </head>
 <body>
+<div id="loading">
+    <img src="IMG/Papel.gif" alt="Carregando...">
+  </div>
   <div class="container">
     <!-- Seu conteúdo aqui -->
              <form action='codigo.php' class="formulario" method="post"> 
@@ -29,5 +32,11 @@
 </form>
     </div>
   </div>
+  <script>
+    setTimeout(function() {
+      var loadingElement = document.getElementById('loading');
+      loadingElement.parentNode.removeChild(loadingElement);
+    }, 2000);
+  </script>
 </body>
 </html>

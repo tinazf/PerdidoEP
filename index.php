@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="auxiliar.css">
-  <title>PEP</title>
+    <title>Login</title>
 </head>
 <body>
-  <div class="container">
-    <!-- Seu conteúdo aqui -->
-             <form action='codigo.php' class="formulario" method="post"> 
-        <div class="field">
-            <label for="nome">Email:</label>
-            <input type="text" name="eml" placeholder='nome@mail.com' required>
-        </div>
-        
-        <div class="field">
-            <label for="telefone">Senha:</label>
-            <input type="text" name="snh" placeholder='********'>
-        </div>
-        <button class="botao-imagem" type="submit" name="login"> Fazer Anotações </button>
-        <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TC.php">Novo Escritor</a></button>
-</form>
-  </div>
+<div class="container">
+<div id="loading">
+    <img src="IMG/Papel.gif" alt="Carregando...">
+</div>
+    <form action="codigo.php" class="formulario" method="post">
+    <div class="field">
+        <label> Email </label>
+        <input class="form-control" type="text" name="eml"/>
+    </div>
+
+    <div class="field">
+        <label> Senha </label>
+        <input class="form-control" type="text" name="snh"/>
+    </div>
+
+    <div class="field">
+    <button class="botao-imagem" type="submit" name="login"> Fazer Anotações </button>
+    <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TC.php">Novo Escritor</a></button>
+    </div>
+
+     </form>
+    </div>
+</div>  
+<script>
+    setTimeout(function() {
+      var loadingElement = document.getElementById('loading');
+      loadingElement.parentNode.removeChild(loadingElement);
+    }, 2000);
+  </script>
 </body>
 </html>
