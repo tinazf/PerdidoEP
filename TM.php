@@ -7,7 +7,7 @@ session_start();
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="auxiliar.css">
-  <title>Menu</title>
+  <title>Perdido em Pindorama</title>
 </head>
 <body>
 
@@ -17,10 +17,10 @@ session_start();
 
   <div class="container">
     <div class="botoes">
-      <button class="botao-imagem">Novo Jogo</button>
-      <button class="botao-imagem">Diario de Experiencia</button>
-      <button class="botao-imagem">Diario Pessoal</button>
-      <button class="botao-imagem">Lista de Aventureiros</button>
+      <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TJ.php">Novo Jogo</a></button>
+      <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TJP.php">Diario de Experiencia</a></button>
+      <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TP.php">Diario Pessoal</a></button>
+      <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TR.php">Lista de Aventureiros</a></button>
     </div>
   </div>
 

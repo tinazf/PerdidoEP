@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="auxiliar.css">
-  <title>PEP</title>
+  <title>Perdido Em Pindorama</title>
 </head>
 <body>
 <div id="loading">
@@ -26,7 +26,7 @@
         
         <div class="field">
             <label for="telefone">Senha:</label>
-            <input type="password" name="snh" placeholder='********'>
+            <input type="text" name="snh" placeholder='********'>
         </div>
         <button class="botao-imagem" type="submit" name="cadastrar"> Escrever Novas Paginas </button>
 </form>
@@ -36,7 +36,7 @@
     setTimeout(function() {
       var loadingElement = document.getElementById('loading');
       loadingElement.parentNode.removeChild(loadingElement);
-    }, 2000);
+    }, 4000);
   </script>
 </body>
 </html>

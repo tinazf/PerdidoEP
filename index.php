@@ -20,7 +20,7 @@
 
     <div class="field">
         <label> Senha </label>
-        <input class="form-control" type="text" name="snh"/>
+        <input class="form-control" type="password" name="snh"/>
     </div>
 
     <div class="field">
@@ -35,7 +35,7 @@
     setTimeout(function() {
       var loadingElement = document.getElementById('loading');
       loadingElement.parentNode.removeChild(loadingElement);
-    }, 2000);
+    }, 4000);
   </script>
 </body>
 </html>

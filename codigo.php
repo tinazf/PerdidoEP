@@ -22,13 +22,13 @@ if (isset($_POST['cadastrar'])) {
     $nome = $_POST['nom'];
     $email = $_POST['eml'];
     $senha = $_POST['snh'];
+    $hash = password_hash($senha,PASSWORD_DEFAULT);
 
     $conexao = conectar();
-    $sql = "INSERT INTO jogador(nome, email, senha) VALUES ('$nome','$email','$senha')";
+    $sql = "INSERT INTO jogador(nome, email, senha) VALUES ('$nome','$email','$hash')";
     return mysqli_query(conectar(), $sql);
 }
 if(isset($_POST['login'])){
-
     $email = $_POST['eml'];
     $senha = $_POST['snh'];
 
@@ -37,10 +37,13 @@ if(isset($_POST['login'])){
 
     if(mysqli_num_rows($resultado) > 0){
         $dados = mysqli_fetch_assoc($resultado);
+        if(password_verify($senha,$dados['senha'])){
+           
             session_start();
-            $_SESSION["email"] = $dados['email'];
-                header("location:TM.php");
-    } else {
-                header("location:index.php");
-    }
+            $_SESSION["idJog"] = $dados['id'];
+            $_SESSION["jog"] = $dados['nome'];
+
+            header("location:TM.php");
+        }
+    } 
 }
