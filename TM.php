@@ -18,8 +18,9 @@ session_start();
   <div class="container">
     <div class="botoes">
       <button class="botao-imagem">Novo Jogo</button>
-      <button class="botao-imagem">Continuar Jogo</button>
       <button class="botao-imagem">Diario de Experiencia</button>
+      <button class="botao-imagem">Diario Pessoal</button>
+      <button class="botao-imagem">Lista de Aventureiros</button>
     </div>
   </div>
 
