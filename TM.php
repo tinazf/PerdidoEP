@@ -16,6 +16,10 @@ session_start();
   </div>
 
   <div class="container">
+    <div class="central">
+      <h1>Perdido Em Pindorama</h1>
+      <img src="IMG/TGif.gif" alt="Gif de Teste">
+    </div>
     <div class="botoes">
       <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TJ.php">Novo Jogo</a></button>
       <button class="botao-imagem"><a style="text-decoration: none;color: inherit;"href="TJP.php">Diario de Experiencia</a></button>
