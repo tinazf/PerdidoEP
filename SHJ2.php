@@ -1,23 +1,20 @@
 <?php
-session_start();
-function conectar() {
-    $host = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $banco_dados = "bdd_pep";
-    $conexao = mysqli_connect($host, $usuario, $senha, $banco_dados);
-    if ($conexao) {
-        mysqli_set_charset($conexao, 'utf8');
-        return $conexao;
-    } else {
-        echo "Erro ao conectar a base de dados. " . mysqli_connect_error();
-        die();
-    }
-} 
+include_once('codigo.php');
 
-$id = $_SESSION['idJog'];
-$sql = "SELECT * FROM jogador WHERE id='$id'";
-$resultado = mysqli_query(conectar(), $sql); 
+function habilidades($a){
+     $sql = "SELECT * FROM jog_hab WHERE id_jog='$a'";
+     $resultado = mysqli_query(conectar(), $sql);
+     $dados = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
+     
+     $sql2 = "SELECT * FROM habilidades;";
+     $resultado2 = mysqli_query(conectar(), $sql2);
+     $dados2 = mysqli_fetch_all($resultado2, MYSQLI_ASSOC);
+     
+     var_dump($dados);
+     var_dump($dados2);
+}
+
+habilidades($_SESSION['idJog']);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
